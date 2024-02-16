@@ -1,6 +1,14 @@
 import React from "react";
 import { Link, useNavigate } from 'react-router-dom';
 export default function SignUp() {
+  const [formData, setFormData] = useState({});
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.id]: e.target.value,
+    });
+  };
+  
   return (
     <div className='p-3 max-w-lg mx-auto'>
       <h1 className='text-3xl text-center font-semibold my-7'>Sign Up</h1>
