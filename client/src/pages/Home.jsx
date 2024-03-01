@@ -13,7 +13,7 @@ export default function Home() {
            Sahand Estate is the best place to find your next perfect place to
           live.
           <br />
-           We have a wide range of properties for you to choose from...
+           We have a wide range of properties for you to choose from.
         </div>
         <Link
           to={'/search'}
